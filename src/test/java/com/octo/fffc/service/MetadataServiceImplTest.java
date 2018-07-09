@@ -1,10 +1,9 @@
-package com.octo.fffc.com.octo.fffc.service;
+package com.octo.fffc.service;
 
-import com.octo.fffc.com.octo.fffc.service.impl.MetadataServiceImpl;
+import com.octo.fffc.service.impl.MetadataServiceImpl;
 import com.octo.fffc.domain.ColumnInfo;
 import com.octo.fffc.domain.Metadata;
 import com.octo.fffc.exception.FixedFileFormatConverterException;
-import org.hamcrest.beans.SamePropertyValuesAs;
 import org.junit.Before;
 import org.junit.Test;
 

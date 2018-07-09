@@ -1,4 +1,4 @@
-package com.octo.fffc.com.octo.fffc.service;
+package com.octo.fffc.service;
 
 import com.octo.fffc.domain.Metadata;
 

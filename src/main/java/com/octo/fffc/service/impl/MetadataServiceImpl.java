@@ -1,6 +1,6 @@
-package com.octo.fffc.com.octo.fffc.service.impl;
+package com.octo.fffc.service.impl;
 
-import com.octo.fffc.com.octo.fffc.service.MetadataService;
+import com.octo.fffc.service.MetadataService;
 import com.octo.fffc.domain.ColumnInfo;
 import com.octo.fffc.domain.Metadata;
 import com.octo.fffc.exception.FixedFileFormatConverterException;
