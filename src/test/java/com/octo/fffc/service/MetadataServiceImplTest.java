@@ -59,6 +59,12 @@ public class MetadataServiceImplTest {
         metadataService.retrieveMetadata(file);
     }
 
+    @Test(expected = FixedFileFormatConverterException.class)
+    public void shouldFailIfInvalidColumnType(){
+        File file = new File(Thread.currentThread().getContextClassLoader().getResource("invalid_column_type.txt").getFile());
+        metadataService.retrieveMetadata(file);
+    }
+
     private Metadata getExpectedMetadata() {
         ColumnInfo birthData = new ColumnInfo("Birth date", 10, "date");
         ColumnInfo firstName = new ColumnInfo("First name", 15, "string");

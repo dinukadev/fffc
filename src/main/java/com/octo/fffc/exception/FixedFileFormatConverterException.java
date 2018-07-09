@@ -14,4 +14,6 @@ public class FixedFileFormatConverterException extends RuntimeException {
     public FixedFileFormatConverterException(String message) {
         super(message);
     }
+
+
 }

@@ -58,6 +58,13 @@ public class MetadataServiceImpl implements MetadataService {
         if(StringUtils.isBlank(columnType)){
             throw new FixedFileFormatConverterException("The column type cannot be empty");
         }
+        validateDataType(columnType);
         return new ColumnInfo(columnName,colLength,columnType);
+    }
+
+    private void validateDataType(String dataType){
+        if(!dataType.matches("date|numeric|string")){
+            throw new FixedFileFormatConverterException("Unsupported data type");
+        }
     }
 }
