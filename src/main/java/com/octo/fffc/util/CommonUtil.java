@@ -67,12 +67,4 @@ public final class CommonUtil {
             throw new FixedFileFormatConverterException(exceptionMessage);
         }
     }
-
-    public static void isValidString(String data) {
-        if (!StringUtils.isAlpha(data)) {
-            String exceptionMessage = String.format("Invalid string : %s", data);
-            throw new FixedFileFormatConverterException(exceptionMessage);
-        }
-    }
-
 }

@@ -67,7 +67,6 @@ public class ProcessDataFileServiceImpl implements ProcessDataFileService {
                 constructedData = CommonUtil.constructDate(data);
                 break;
             case "string":
-                CommonUtil.isValidString(data);
                 constructedData = data;
                 break;
             case "numeric":
